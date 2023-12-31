@@ -5,9 +5,9 @@ A simple and secure password generator implemented in C. This tool allows users 
 
 ## Features
 
--**Uer-friendly: **Prompt-based input for password length.
--**Randomized character selection: **Enhanced security through randomization.
--**Easy to use:**Compile and run using standard C compilers.
+- **User-friendly:**Prompt-based input for password length.
+- **Randomized character selection: **Enhanced security through randomization.
+- **Easy to use:**Compile and run using standard C compilers.
 
 ## Usage
 1. Enter the desired password length when prompted.
@@ -15,6 +15,6 @@ A simple and secure password generator implemented in C. This tool allows users 
 
 ## How to Compile and Run
 
-'''bash
+```bash
 cc passwordGenerator.c 
 ./a.out
