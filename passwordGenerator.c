@@ -4,12 +4,19 @@
 
 #include<time.h>
 
+// Function to generate a random password of given length
+
 void generatePassword(int length){
 
-	const char letters[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVXYZ0123456789!@#$%^&*()_+-=";
+	// characters to be used in the password
 
+	const char letters[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVXYZ0123456789!@#$%^&*()_+-=";
+	
+	// Length of the string (excluding null terminator)
 
 	int passwordLength = sizeof(letters) - 1;
+
+	// Random number generation with the current time
 
 	srand((unsigned int)time(NULL));
 
@@ -26,7 +33,9 @@ void generatePassword(int length){
 
 }
 
-void main(){
+// Main function to take user input for password length and call the generator function 
+
+int main(){
 
 	int length;
 
@@ -41,5 +50,7 @@ void main(){
 	else
 
 		generatePassword(length);
+
+	return 0;
 
 }
